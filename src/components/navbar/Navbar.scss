@@ -1,0 +1,57 @@
+.navbar {
+    .title {
+      flex-grow: 1;
+      display: none;
+      @media (min-width: 600px) {
+        display: block;
+      }
+    }
+  
+    .search {
+      position: relative;
+      border-radius: 4px;
+      background-color: #1976d2;
+      margin-right: 16px;
+      margin-left: 0;
+      width: 100%;
+      @media (min-width: 600px) {
+        margin-left: 24px;
+        width: auto;
+      }
+  
+      .searchIcon {
+        padding: 8px;
+        height: 100%;
+        position: absolute;
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .input {
+        color: inherit;
+        padding: 8px 8px 8px calc(1em + 32px);
+        transition: width 200ms ease;
+        width: 100%;
+        @media (min-width: 960px) {
+          width: 20ch;
+        }
+      }
+    }
+  
+    .addButton {
+      margin-right: 16px;
+    }
+  
+    .account {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+  
+    .avatar {
+      margin-left: 8px;
+    }
+  }
+  
